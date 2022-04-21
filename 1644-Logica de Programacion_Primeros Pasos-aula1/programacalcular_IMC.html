@@ -1,0 +1,163 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA CALCULAR IMC / 1</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<hr>");
+    }
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+    function calcularImc(peso, altura) {
+        imc = peso / (altura * altura);
+        return (imc);
+    }
+
+    pesoRafael = 90;
+    alturaRafael = 1.72;
+    imcRafael = Math.round(calcularImc(pesoRafael, alturaRafael));
+
+        imprimir("El IMC de Rafael es: " + imcRafael);
+
+        pesoAdrian = 80;
+    alturaAdrian = 1.73;
+    imcAdrian = Math.round(calcularImc(pesoAdrian, alturaAdrian));;
+
+        imprimir("El IMC de Adrian es: " + imcAdrian);
+
+</script>
+
+<meta charset="UTF-8">
+
+<h1>PROGRAMA CALCULAR IMC / 2</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<hr>");
+    }
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+    function calcularImc(peso, altura) {
+        imc = peso / (altura * altura);
+        return (imc);
+    }
+
+    pesoRafael = 90;
+    alturaRafael = 1.72;
+    imcRafael = Math.round(calcularImc(pesoRafael, alturaRafael));
+    imprimir("El IMC de Rafael es: " + imcRafael);
+
+    pesoAdrian = 80;
+    alturaAdrian = 1.73;
+    imcAdrian = Math.round(calcularImc(pesoAdrian, alturaAdrian));;
+    imprimir("El IMC de Adrian es: " + imcAdrian);
+
+</script>
+
+<meta charset="UTF-8">
+
+<h1>PROGRAMA CALCULAR IMC / 3</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<hr>");
+    }
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+    function calcularImc(peso, altura, nombre) {
+        imc = peso / (altura * altura);
+        imprimir("El IMC calculado de " + nombre + " es: " + Math.round(imc));
+    }
+
+    calcularImc(90, 1.72, "Rafael");
+    calcularImc(80, 1.73, "Adrian");
+    
+
+</script>
+
+<meta charset="utf-8">
+<h1>PROGRAMA CACULAR IMC 4</h1>
+<br>
+
+<script>
+
+function saltarlinea() {
+document.write("<br>"); 
+document.write("<br>"); 
+document.write("<br>"); 
+}
+
+function imprimir(frase) {
+    document.write(frase);
+    saltarlinea();
+}
+
+function calcularImc(peso,altura) {
+    return (peso / (altura * altura))
+}
+
+imprimir("el promedio del imc calculado de Erik y Juan es:" + (calcularImc(75,1.70)+calcularImc(72,1.65)) /2);
+imprimir("el promedio del imc calculado de Laura y Diana es:" + (calcularImc(55,1.60)+calcularImc(58,1.59)) /2);
+</script>
+
+<meta charset="UTF-8">
+
+<h3>Programa que calcula IMC (Indice de Masa Corporal)</h3>
+
+<script>
+
+    function calcularIMC(peso, altura) {
+        return peso / (altura * altura);
+    }
+
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write("<big>" + frase + "</big>");
+        saltarLinea();
+    }
+
+    var nombre = prompt("Por favor introduzca su nombre.")
+    var miPeso = prompt(nombre + " Por favor introduzca su peso.");
+    var miAltura = prompt(nombre + " Por favor introduzca su altura.");
+    var miIMC = calcularIMC(miPeso, miAltura);
+
+    imprimir("Hola " + nombre + ", su IMC es " + Math.round(miIMC));
+
+   if (miIMC < 18.5) {
+     imprimir("IMC abajo de lo recomendado");
+   }
+   if (miIMC >= 18.5) {
+       if (miIMC < 25) {
+           imprimir("IMC esta dentro del intervalo normal");
+       }
+   }
+   if (miIMC >= 25) {
+       if (miIMC < 30) {
+           imprimir("IMC considerado como sobrepeso");
+       }
+    }
+   if (miIMC <= 30) {
+     imprimir("IMC considerado como obesidad");
+   }
+        
+</script>
+
